@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://bc3bcjdtcw41u"]
+
+[ext_resource type="Script" path="res://green_plane.gd" id="1_3btjm"]
+[ext_resource type="Texture2D" uid="uid://dq746rwbgqg68" path="res://PixelPlanesAssetPack1.png" id="1_fhlnk"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7bfdc"]
+radius = 39.9975
+height = 100.0
+
+[node name="GreenPlane" type="CharacterBody2D"]
+script = ExtResource("1_3btjm")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-1.19209e-07, 7)
+scale = Vector2(3.96875, 3.96875)
+texture = ExtResource("1_fhlnk")
+region_enabled = true
+region_rect = Rect2(128, 96, 32, 32)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -9)
+rotation = -1.57116
+shape = SubResource("CapsuleShape2D_7bfdc")

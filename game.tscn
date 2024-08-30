@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=3 uid="uid://c6c1dj5pp2rsj"]
+
+[ext_resource type="PackedScene" uid="uid://bc3bcjdtcw41u" path="res://green_plane.tscn" id="1_nvqh2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wv8mr"]
+size = Vector2(25, 507.938)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o3ihu"]
+size = Vector2(25, 1942)
+
+[node name="Game" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+offset_right = 1917.0
+offset_bottom = 1075.0
+color = Color(0.611765, 1, 1, 1)
+
+[node name="GreenPlane" parent="." instance=ExtResource("1_nvqh2")]
+position = Vector2(954, 839)
+motion_mode = 1
+platform_on_leave = 2
+
+[node name="Area2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 800.062)
+shape = SubResource("RectangleShape2D_wv8mr")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(1917, 808.031)
+shape = SubResource("RectangleShape2D_wv8mr")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(959, 1075)
+rotation = -1.57079
+shape = SubResource("RectangleShape2D_o3ihu")
