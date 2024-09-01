@@ -21,7 +21,3 @@ texture = ExtResource("2_x8htb")
 [node name="ShootingPointRight" type="Marker2D" parent="Sprite2D"]
 unique_name_in_owner = true
 position = Vector2(7, -10)
-
-[node name="ShootingPointLeft" type="Marker2D" parent="Sprite2D"]
-unique_name_in_owner = true
-position = Vector2(-6, -10)
