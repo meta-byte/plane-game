@@ -15,20 +15,19 @@ func shoot(shootingPoint: String) -> void:
 	var new_bullet = BULLET.instantiate()
 	var shooting_point_right = %ShootingPointRight
 	var shooting_point_left = %ShootingPointLeft
+	
 	if shootingPoint == "left":
 		new_bullet.global_position = shooting_point_left.global_position
 		var tilt_adjusted_rotation = rotation + tilt
 		new_bullet.direction = Vector2.UP.rotated(tilt_adjusted_rotation)
+	
 	
 	if shootingPoint == "right":
 		new_bullet.global_position = shooting_point_right.global_position
 		var tilt_adjusted_rotation = rotation + tilt
 		new_bullet.direction = Vector2.UP.rotated(tilt_adjusted_rotation)
 		
-	if shooting_point_left:
-		
-	   
-		get_tree().root.add_child(new_bullet)
+	get_tree().root.add_child(new_bullet)		
 
 
 

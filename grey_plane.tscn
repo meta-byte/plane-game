@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://i2poqm58r07m"]
+
+[ext_resource type="Texture2D" uid="uid://bwtdvngho5esu" path="res://sprites/109.png" id="1_2ot5o"]
+[ext_resource type="Script" path="res://grey_plane.gd" id="1_bnalf"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_en43j"]
+radius = 13.0
+height = 32.0
+
+[node name="GreyPlane" type="CharacterBody2D"]
+rotation = -3.14159
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_bnalf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+rotation = -1.5708
+shape = SubResource("CapsuleShape2D_en43j")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 1)
+texture = ExtResource("1_2ot5o")
+
+[node name="EnemyShootingPointLeft" type="Marker2D" parent="Sprite2D"]
+position = Vector2(7, -9)
+
+[node name="EnemyShootingPointLeft2" type="Marker2D" parent="Sprite2D"]
+position = Vector2(-6, -9)

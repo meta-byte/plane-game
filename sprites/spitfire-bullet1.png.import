@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dq746rwbgqg68"
-path="res://.godot/imported/PixelPlanesAssetPack1.png-9479efb9e0df3f459807fee0c4919dcb.ctex"
+uid="uid://c6rfroncfakiw"
+path="res://.godot/imported/spitfire-bullet1.png-3021c5d3edc191c906bcd41f02e71ad1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://PixelPlanesAssetPack1.png"
-dest_files=["res://.godot/imported/PixelPlanesAssetPack1.png-9479efb9e0df3f459807fee0c4919dcb.ctex"]
+source_file="res://sprites/spitfire-bullet1.png"
+dest_files=["res://.godot/imported/spitfire-bullet1.png-3021c5d3edc191c906bcd41f02e71ad1.ctex"]
 
 [params]
 

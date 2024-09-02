@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bc3bcjdtcw41u"]
 
 [ext_resource type="Script" path="res://green_plane.gd" id="1_3btjm"]
-[ext_resource type="Texture2D" uid="uid://h427si5egt6t" path="res://Spitfire.png" id="2_x8htb"]
+[ext_resource type="Texture2D" uid="uid://pt3bvjprrk1q" path="res://sprites/Spitfire2.png" id="2_6yosa"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7bfdc"]
 radius = 15.0004
@@ -16,7 +16,7 @@ shape = SubResource("CapsuleShape2D_7bfdc")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
-texture = ExtResource("2_x8htb")
+texture = ExtResource("2_6yosa")
 
 [node name="ShootingPointRight" type="Marker2D" parent="Sprite2D"]
 unique_name_in_owner = true
